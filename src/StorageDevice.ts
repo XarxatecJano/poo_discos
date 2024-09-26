@@ -1,6 +1,6 @@
 import { ContentRemoveFromArray } from "./ContentRemoverFromArray.js";
 
-export class StorageDevice {
+export abstract class StorageDevice {
     #name: string;
     #velocity: number;
     #capacity: number;
@@ -13,6 +13,7 @@ export class StorageDevice {
         this.#readAndWriteMode = readAndWriteMode;
         this.#velocity = velocity;
     }
+
 
     public get name(): string {
         return this.#name;

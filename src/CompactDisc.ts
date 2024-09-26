@@ -1,9 +1,9 @@
-import { IReader } from "./IReader";
-import { ISpinner } from "./ISpinner";
-import { IWriter } from "./IWriter";
-import { StorageDevice } from "./StorageDevice";
+import { IReader } from "./IReader.js";
+import { ISpinner } from "./ISpinner.js";
+import { IWriter } from "./IWriter.js";
+import { StorageDevice } from "./StorageDevice.js";
 
-class CompactDisc extends StorageDevice implements IReader, IWriter, ISpinner{
+export class CompactDisc extends StorageDevice implements IReader, IWriter, ISpinner{
 
     ejectCd():void{
         console.log("Abro la bandeja");
